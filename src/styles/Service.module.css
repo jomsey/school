@@ -1,0 +1,23 @@
+.singleService{
+    width: 250px;
+    height: 300px;
+    min-height: 300px;
+    
+}
+
+.singleService h3{
+    color: var(--light);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 24px;
+}
+.singleService p{
+    color: var(--light);
+}
+
+@media screen and (max-width:800px) {
+    .singleService{
+        width:auto;
+        height: auto; 
+    }
+}

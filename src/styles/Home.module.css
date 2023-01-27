@@ -1,0 +1,468 @@
+/******************LANDING*************************/
+
+.landing {
+    height: 95vh;
+    width: 100%;
+    background-color: var(--grey);
+    position: relative;
+    display: flex;
+}
+
+.landing::after {
+    content: "";
+    width: 100%;
+    height: 400px;
+    -webkit-clip-path: polygon(100% 100%, 0 100%, 0 89%, 15% 68%);
+    clip-path: polygon(100% 100%, 0 100%, 0 89%, 15% 68%);
+    background-color: var(--light);
+    position: absolute;
+    bottom: 0;
+}
+
+.landing button {
+    background-color: var(--primary);
+    color: var(--light);
+    width: 250px;
+    padding: 12px 0;
+    outline: none;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 12px var(--secondary);
+    transition: all .3s ease;
+}
+
+.landing button:hover {
+    opacity: .8;
+}
+
+.intro {
+    width: 700px;
+    align-self: center;
+    margin: 0 60px 48px 60px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: 800 !important;
+}
+
+.intro h1 span {
+    color: var(--primary);
+}
+
+.intro p {
+    margin: 32px 0;
+    color: black;
+    width: 75%;
+}
+/***********************SCHOOL SERVICES*******************/
+
+.schoolServices {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 60px 60px 60px;
+}
+
+.schoolServices p,
+.schoolServices h2 {
+    text-align: center;
+}
+
+.schoolServices p {
+    width: 65%;
+    margin: auto;
+    margin-top: var(--m-top-x);
+}
+
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--m-top-x);
+}
+/************************SCHOOL MISSION*************************/
+
+.mission {
+    padding: 60px;
+    background-size: cover;
+    background-image: url(/education_poll_caro_original_53750.jpg);
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.mission p,
+.mission h2 {
+    text-align: center;
+    color: var(--light);
+    z-index: 2;
+}
+
+.mission p {
+    width: 65%;
+    margin: auto;
+    margin-top: 32px;
+    color: rgb(199, 196, 196);
+}
+/************************SCHOOL VISION*************************/
+
+.vision {
+    height: 300px;
+    background-color: var(--grey);
+    margin-top: var(--m-top-x);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vision p {
+    width: 65%;
+    align-self: center;
+    margin-top: 32px;
+}
+/************************ABOUT*************************/
+
+.aboutUsContainer {
+    margin: 60px;
+}
+
+.aboutUsContainer h2 {
+    text-align: center;
+}
+
+.aboutUsContainer p:first-child {
+    margin-bottom: 32px;
+}
+
+.aboutUs {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: var(--m-top-x);
+    gap: 32px;
+}
+
+.aboutUsImage {
+    width: 500px;
+}
+
+.aboutUsText {
+    width: 500px;
+}
+/************************REVIEWs*************************/
+
+.reviews {
+    margin: 60px;
+}
+
+.reviews p,
+.reviews h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.reviews p {
+    width: 65%;
+    align-self: center;
+    margin-top: 32px;
+}
+
+.reviews .reviewsSlider {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 32px;
+    position: relative;
+}
+/*************************CONTACT US*********************/
+
+.contactUs {
+    width: 100%;
+    height:550px;
+    background-image: url(/grads.webp);
+    background-color: var(--grey);
+    position: relative;
+    background-size: cover;
+}
+.contactUs .messageContainer{
+    height: 100%;
+    width: 600px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+}
+
+.contactUs .messageContainer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.contactUs .messageContainer *{
+    display: block;
+    width: 70%;
+}
+
+.contactUs .messageContainer h3,
+.contactUs .messageContainer p {
+    color:var(--light);
+}
+
+.contactUs .messageContainer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+}
+.contactUs .messageContainer input,
+.contactUs .messageContainer textarea{
+    background-color: transparent;
+    box-shadow:  0 0 0 1px #fff;
+    border: none;
+    margin-top: 24px;
+    outline: none;
+    color: var(--grey);
+}
+.contactUs .messageContainer button{
+    margin-top: 24px;
+    background-color: var(--primary);
+    color:#fff;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition:all .3s ease
+}
+
+.contactUs .messageContainer button:hover{
+    opacity: 0.8;
+}
+.contactUs .messageContainer input, 
+.contactUs .messageContainer textarea{
+    padding: 12px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.contactUs .messageContainer input::placeholder,
+.contactUs .messageContainer textarea::placeholder{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.contactUs .messageContainer input::-moz-placeholder,
+.contactUs .messageContainer textarea::-moz-placeholder{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottomNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px;
+    padding: 40px 60px;
+    background-color: rgb(29, 21, 21);
+    color: var(--grey);
+}
+.bottomNav div{
+    height: 100%;
+}
+.bottomNav h4{
+    color: var(--light);
+    margin-bottom: 16px;
+    font-size: .9rem;
+}
+.bottomNav span,.links ul li a{
+    font-family: "Roboto",sans-serif;
+    font-size: .9rem;
+    color: var(--grey);
+    
+}
+
+.links ul{
+padding:0;
+
+}
+.links ul li,.links .bottomNav span{
+margin-top: 8px;
+}
+
+.siteFooter{
+    background-color: var(--secondary);
+    height: 50px;
+    width: 100%;
+    color: var(--light);
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/***********Gallery***************/
+.gallery h2{
+    text-align: center;
+    margin-top: var(--m-top-x);
+    margin-bottom: var(--m-top-x);
+}
+
+.socialPack{
+    width:100px;
+    display:flex;
+    gap: 16px;
+}
+
+.socialPack i{
+    color: var(--primary);
+    font-size: 1.2rem;
+    cursor:pointer;
+}
+
+/*******************MEDIA**************/
+
+@media screen  and (max-width:834px){
+    .landing {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .landing::after {
+        height: 200px;
+    }
+    
+    .landing button {
+      
+        width: 200px;
+       
+    }
+    
+
+    .intro {
+        width: auto;
+        margin:0;
+        padding:  60px ;
+       
+    }
+    
+    .intro p {
+        width: 85%;
+    }
+
+    .schoolServices {
+        margin: 30px 60px 60px 60px;
+    }
+    
+    
+    .schoolServices p {
+        width: 70%;
+    
+    }
+    
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+    }
+    .contactUs .messageContainer{
+    width:60%;
+}
+.aboutUs {
+    width: 100%;
+    flex-direction: column;
+}
+
+.aboutUsImage {
+    width: 100%;
+}
+
+.aboutUsText {
+    width: 100%;
+}
+
+
+
+}
+
+@media screen  and (max-width:428px){
+    .schoolServices {
+        margin:60px 0;
+    }
+    
+    
+    .schoolServices p {
+        width: 70%;
+    
+    }
+    .services {
+        grid-template-columns: 1fr ;
+      
+    }
+    .aboutUsContainer {
+        margin: 30px;
+    }
+    
+    .contactUs .messageContainer{
+        width:100%;
+        padding: 32px 0;
+    }
+
+        .contactUs {
+            height: 650px;;           
+        }
+
+        .aboutUsImage {
+            width: 100%;
+            height: 250px;
+        }
+
+        .vision {
+            height: auto;
+            padding:32px 0 ;
+            
+        }
+        .vision p {
+            width: 85%;
+        }
+
+        .reviews {
+            margin: 30px;
+        }
+        
+        .reviews p {
+            width: 85%;
+        
+        }
+        .mission {
+            height: auto;
+            padding: 32px 16px;
+        
+        }
+        .mission p {
+            width: 100%;
+        }
+    
+       
+}
+

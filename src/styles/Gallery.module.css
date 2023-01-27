@@ -1,0 +1,21 @@
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: max-content;
+    padding-bottom: 60px;
+    
+}
+.galleryImage{
+    height: 300px;
+    background-color: var(--grey);
+}
+
+
+.gallery a:nth-child(even){
+    position: relative;
+    top: 60px;
+}

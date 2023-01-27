@@ -1,0 +1,58 @@
+.navContainer{
+    background-color:var(--light);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    width: 100%;
+    z-index: 1000;
+    transition: all 1s linear;
+   
+  
+}
+
+.fixed{
+    background-color:var(--light);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    transition: all 1s linear;
+    top: 0;
+    left: 0;}
+.logo{
+   
+    height: 100%;
+   
+}
+
+.links ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.links a {
+    color:var(--dark);
+    font-size:14px;
+
+}
+
+.socialPack{
+    width:100px;
+    display:flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.socialPack i{
+    color: var(--primary);
+    font-size: 1.2rem;
+    cursor:pointer;
+}

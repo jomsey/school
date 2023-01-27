@@ -1,0 +1,15 @@
+.review{
+    width: 300px;
+    height: 250px;
+}
+
+.review p{
+    color: var(--secondary);
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+.review span{
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+}
