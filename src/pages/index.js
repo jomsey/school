@@ -1,13 +1,18 @@
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
+import Image from 'next/image'
+import Review from '../components/Review'
 import NavBar from '../components/NavBar'
 import Gallery from '../components/Gallery'
 import Service from '../components/Service'
-import servicesOffered from '../utils/services-offered'
-import Review from '../components/Review'
+import styles from '@/styles/Home.module.css'
 import galleryImages from '../utils/gallery-images'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import servicesOffered from '../utils/services-offered'
+import { Navigation, Pagination} from 'swiper';
 
 
 export default function Home() {
@@ -67,12 +72,13 @@ export default function Home() {
               )}
             </div>
       </section>
+
       <section className={styles.mission}>
-        <h2>Nurturing Your Child</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-        </p>
+            <h2>Nurturing Your Child</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+            </p>
       </section>
 
       <section className={styles.gallery}>
@@ -83,42 +89,53 @@ export default function Home() {
       </section>
 
       <section className={styles.vision}>
-        <h2><span>Our </span>Vision</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-        </p>
+          <h2><span>Our </span>Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+          </p>
       </section>
+
       <section className={styles.aboutUsContainer} >
         <h2><span>About</span> Us</h2>
         <div className={styles.aboutUs}>
-        <div className={styles.aboutUsText}>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-        </p>
-        </div>
+            <div className={styles.aboutUsText}>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+                  </p>
 
-        <div className={styles.aboutUsImage} >
-          <img src="/bg_5.jpg"/>
-        </div>  
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+                  </p>
+            </div>
+
+            <div className={styles.aboutUsImage} >
+                  <img src="/bg_5.jpg"/>
+            </div>
         </div>
       </section>
 
       <section className={styles.reviews}>
           <h2><span>Reviews</span> From  Community</h2>
+
           <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
           </p>
+
           <div className={styles.reviewsSlider}>
-              <Review/>
-              <Review/>
-              <Review/>
+              <Swiper spaceBetween={50} slidesPerView={3} navigation={true} loop={true} modules={[Navigation, Pagination]}>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+                    <SwiperSlide><Review/></SwiperSlide>
+              </Swiper>
           </div>
       </section>
 

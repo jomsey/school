@@ -3,6 +3,8 @@
     --primary: #E54646;
     --grey: #EAE7E7;
     --secondary: rgba(250, 169, 19, 0.918);
+    --swiper-theme-color: var(--primary) !important;
+    --swiper-navigation-size: 32px !important;
     --text-para: #5F5F5F;
     --dark:rgb(17, 16, 16);
     --m-top-x:48px;
@@ -67,3 +69,10 @@ img {
    
     
 }
+
+
+.swiper-slide-next{
+    border:1px solid green;
+}
+  
+ 
