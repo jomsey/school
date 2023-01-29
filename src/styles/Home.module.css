@@ -290,17 +290,22 @@
     height: 100%;
 }
 .bottomNav h4{
-    color: var(--light);
     margin-bottom: 16px;
     font-size: .9rem;
+    color: var(--secondary);
+    font-weight: 500;
 }
 .bottomNav span,.links ul li a{
     font-family: "Roboto",sans-serif;
-    font-size: .9rem;
+    font-size: .8rem;
     color: var(--grey);
     
 }
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
 
+}  
 .links ul{
 padding:0;
 
@@ -404,10 +409,9 @@ margin-top: 8px;
 
 
 }
-
-@media screen  and (max-width:428px){
+@media screen  and (max-width:620px){
     .schoolServices {
-        margin:60px 0;
+        margin:60px 0 0 0;
     }
     
     
@@ -419,16 +423,38 @@ margin-top: 8px;
         grid-template-columns: 1fr ;
       
     }
+
+    .contactUs .messageContainer{
+        width:100%;
+        padding:  0 32px
+    }
+
+    .contactUs .messageContainer *{
+        width: 100%;
+    }
+
+}
+
+@media screen  and (max-width:428px){
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    
+    .intro {
+        width: auto;
+        padding:  32px ;
+       
+    }
     .aboutUsContainer {
         margin: 30px;
     }
     
     .contactUs .messageContainer{
-        width:100%;
-        padding: 32px 0;
+        padding:  0 24px;
     }
-
-        .contactUs {
+    
+    .contactUs {
             height: 650px;;           
         }
 
@@ -440,6 +466,7 @@ margin-top: 8px;
         .vision {
             height: auto;
             padding:32px 0 ;
+
             
         }
         .vision p {
@@ -462,7 +489,33 @@ margin-top: 8px;
         .mission p {
             width: 100%;
         }
-    
+
+
+
+        .bottomNav{
+            display: grid;
+            grid-template-columns: 1fr;
+            height: auto;
+            gap: 32px;
+        }
+        .bottomNav .badge{
+            width: 150px;
+            height: auto;
+            /* position: relative;
+            left: 50%; */
+            margin: auto;
+        }
+       
+        .bottomNav h4{
+            margin-bottom: 16px;
+            font-size: .8rem;
+        }
+        .bottomNav span,.links ul li a{
+            font-family: "Roboto",sans-serif;
+            font-size: .75rem;
+            
+        }
+        
        
 }
 

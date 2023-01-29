@@ -56,3 +56,21 @@
     font-size: 1.2rem;
     cursor:pointer;
 }
+
+
+@media screen  and (max-width:834px){
+    .links ul{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+@media screen  and (max-width:620px){
+   .links{
+    position: absolute;
+    visibility: hidden;
+   }
+
+}

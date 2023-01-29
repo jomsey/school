@@ -110,71 +110,75 @@ export default function Home() {
       </section>
 
       <section className={styles.reviews}>
-      <h2><span>Reviews</span> From  Community</h2>
-      <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-      </p>
-      <div className={styles.reviewsSlider}>
-      <Review/>
-      <Review/>
-      <Review/>
-      </div>
+          <h2><span>Reviews</span> From  Community</h2>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+          </p>
+          <div className={styles.reviewsSlider}>
+              <Review/>
+              <Review/>
+              <Review/>
+          </div>
       </section>
 
       <section className={styles.contactUs}>
-      <div className={styles.messageContainer}>
-          <h3>Leave Us a Message</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur</p>
-          <form method="POST">
-            <input type="text" name="name" placeholder="Name"/>
-            <input type="email" name="email"  placeholder="Email"/>
-            <textarea placeholder="Message" rows="6" ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
+          <div className={styles.messageContainer}>
+              <h3>Leave Us a Message</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur</p>
+              
+              <form method="POST">
+                  <input type="text" name="name" placeholder="Name"/>
+                  <input type="email" name="email"  placeholder="Email"/>
+                  <textarea placeholder="Message" rows="6" ></textarea>
+                  <button type="submit">Send Message</button>
+              </form>
+            </div>
       </section>
 
       <section className={styles.bottomNav}>
-      <div className={styles.badge}>
-      <img src="/badge.png" />
-      </div>
-      <div className={styles.links}>
-      <h4>SITE LINKS</h4>
-      <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/">About Us</Link></li>
-            <li><Link href="/">Accademics</Link></li>
-            <li><Link href="/">Blog</Link></li>
-            <li><Link href="/">Contact Us</Link></li>
-            <li><Link href="/">Privacy Policy</Link></li>
-          </ul>
-
-      </div>
-      <div className={styles.links}>
-      <h4>SITE LINKS</h4>
-      <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/">About Us</Link></li>
-            <li><Link href="/">Accademics</Link></li>
-            <li><Link href="/">Blog</Link></li>
-            <li><Link href="/">Contact Us</Link></li>
-            <li><Link href="/">Privacy Policy</Link></li>
-          </ul>
-
-      </div>
-      <div className={styles.contacts}>
-         <h4>CONTACTS</h4>
-         {/* <div className={styles.socialPack}>
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
+          <div className={styles.badge}>
+              <img src="/badge.png" />
           </div>
-            <br/> */}
-            <span>+254-000-000-000</span>
-            <br/>
-            <span>+254-111-000-000</span>
-      </div>
+
+          <div className={styles.linksContainer}>
+
+                <div className={styles.links}>
+                    <h4>Main Links</h4>
+                    <ul>
+                      <li><Link href="/">Home</Link></li>
+                      <li><Link href="/">About Us</Link></li>
+                      <li><Link href="/">Accademics</Link></li>
+                      <li><Link href="/">Blog</Link></li>
+                      <li><Link href="/">Contact Us</Link></li>
+                    </ul>
+                </div>
+
+                <div className={styles.links}>
+                    <h4>Other Links</h4>
+                    <ul>
+                      <li><Link href="/">Link 1</Link></li>
+                      <li><Link href="/">Link 2</Link></li>
+                      <li><Link href="/">Link 3</Link></li>
+                      <li><Link href="/">Link 4</Link></li>
+                      <li><Link href="/">Link 5</Link></li>
+                     
+                    </ul>
+
+                </div>
+          </div>
+          <div className={styles.contacts}>
+            <h4>Contacts</h4>
+            {/* <div className={styles.socialPack}>
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+              </div>
+                <br/> */}
+                <span>+254-000-000-000</span>
+                <br/>
+                <span>+254-111-000-000</span>
+          </div>
       </section>
       <footer className={styles.siteFooter}>
          &copy; The Canopy School 2023
