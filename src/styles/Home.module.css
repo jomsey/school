@@ -502,6 +502,7 @@ margin-top: 8px;
         .bottomNav{
             grid-template-columns: 1fr;
             height: auto;
+            padding: 24px;
 
         }
         .bottomNav .badge{

@@ -126,7 +126,26 @@ export default function Home() {
           </p>
 
           <div className={styles.reviewsSlider}>
-              <Swiper spaceBetween={50} slidesPerView={3} navigation={true} loop={true} modules={[Navigation, Pagination]}>
+              <Swiper spaceBetween={50}
+                     
+                      navigation={true}
+                      loop={true}
+                      modules={[Navigation, Pagination]}
+                      breakpoints={{
+                                      640: {
+                                        slidesPerView: 1,
+                                    
+                                      },
+                                      768: {
+                                        slidesPerView: 2,
+                                      
+                                      },
+                                      1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 50,
+                                      },
+                                    }}
+                      >
                     <SwiperSlide><Review/></SwiperSlide>
                     <SwiperSlide><Review/></SwiperSlide>
                     <SwiperSlide><Review/></SwiperSlide>

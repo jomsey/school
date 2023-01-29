@@ -68,6 +68,9 @@
 }
 
 @media screen  and (max-width:620px){
+    .socialPack{
+       display:none
+    }
    .links{
     position: absolute;
     visibility: hidden;
