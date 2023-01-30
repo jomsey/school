@@ -13,10 +13,32 @@ import galleryImages from '../utils/gallery-images'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import servicesOffered from '../utils/services-offered'
 import { Navigation, Pagination} from 'swiper';
+import React from 'react';
+import sendMessage from '../services/http-service';
 
 
 export default function Home() {
-  
+  const [formData,setFormData] = React.useState({})
+
+  const handleMessageSend= async e=>{
+        e.preventDefault()
+        try {
+          const res =  sendMessage(formData)
+          console.log(res)
+        } catch (error) {
+          console.log("no")
+        }
+        
+  }
+
+  const handleChange =e=>{
+        const name = event.target.name;
+        const value = event.target.value;
+        setFormData(values => ({...values, [name]: value}))
+
+  }
+ 
+
   return (
     <>
       <Head>
@@ -164,10 +186,10 @@ export default function Home() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur</p>
               
               <form method="POST">
-                  <input type="text" name="name" placeholder="Name"/>
-                  <input type="email" name="email"  placeholder="Email"/>
-                  <textarea placeholder="Message" rows="6" ></textarea>
-                  <button type="submit">Send Message</button>
+                  <input type="text" onChange={handleChange} name="name" placeholder="Name"/>
+                  <input type="email"onChange={handleChange} name="email"  placeholder="Email"/>
+                  <textarea  onChange={handleChange} name="message" placeholder="Message" rows="6" ></textarea>
+                  <button type="submit" onClick={handleMessageSend}>Send Message</button>
               </form>
             </div>
       </section>
