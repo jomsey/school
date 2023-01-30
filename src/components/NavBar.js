@@ -6,7 +6,12 @@ import styles from "@/styles/NavBar.module.css"
 
 export default function NavBar() {
   const [navFixed,setNavFixed] = useState(false);
+  const [offCanvasVisible,setOffCanvasVisible] = useState(false);
+
   const navClasses = "navContainer"
+  const canvasClasses = "nav-visible"
+  
+  const handleTogglerClick = ()=>{}
 
   const handleScroll=()=>{
     window.scrollY>=300?setNavFixed(true):setNavFixed(false);
@@ -37,6 +42,8 @@ export default function NavBar() {
        <i className="fa fa-twitter"></i>
        <i className="fa fa-linkedin"></i>
        </div>
+
+       <span className={styles.toggler} onClick={handleTogglerClick}>X</span>
     </div>
   )
 }

@@ -444,6 +444,18 @@ margin-top: 8px;
     width: 85%;
 }
 
+.bottomNav{
+    padding: 32px;
+
+}
+
+.contactUs {
+    height:600px;
+}
+.contactUs .messageContainer {
+    width: 100%;
+}
+
 }
 @media screen  and (max-width:620px){
     .schoolServices {
@@ -462,12 +474,10 @@ margin-top: 8px;
 
     .contactUs .messageContainer{
         width:100%;
-        padding:  0 32px
+        padding: 60px;
     }
 
-    .contactUs .messageContainer *{
-        width: 100%;
-    }
+   
 
 }
 
@@ -487,7 +497,11 @@ margin-top: 8px;
     }
     
     .contactUs .messageContainer{
-        padding:  0 24px;
+        padding: 32px !important;
+    }
+
+    .contactUs .messageContainer *{
+       width: 100%;
     }
     
     .contactUs {
@@ -510,7 +524,7 @@ margin-top: 8px;
         }
 
         .reviews {
-            margin: 30px;
+            margin: 32px;
         }
         
         .reviews p {
@@ -531,14 +545,12 @@ margin-top: 8px;
         .bottomNav{
             grid-template-columns: 1fr;
             height: auto;
-            padding: 24px;
+            padding: 32px;
 
         }
         .bottomNav .badge{
             width: 150px;
             height: auto;
-            /* position: relative;
-            left: 50%; */
             margin: auto;
         }
        

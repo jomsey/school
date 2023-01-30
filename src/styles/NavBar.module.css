@@ -58,22 +58,53 @@
 }
 
 
+
 @media screen  and (max-width:834px){
-    .links ul{
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
+    .links{
+        position: absolute;
+        top: 80px;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+        background-color: var(--light);
+        gap:16px;
+        transition: all .5s linear;
+        overflow: hidden;
+        height:auto;
+        padding: 60px;
+        
     }
+
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:16px;
+    }
+
+    .linksVisible{
+       height: auto;
+       padding: 60px;
+       position: absolute;
+       top: 80px;
+       z-index: 100;
+       width: 100%;
+       left: 0;
+       background-color: var(--light);
+       gap:16px;
+       transition: all .5s linear;
+       overflow: hidden;
+       
+    }
+
+ 
+
 }
 
 @media screen  and (max-width:620px){
     .socialPack{
        display:none
     }
-   .links{
-    position: absolute;
-    visibility: hidden;
-   }
+  
 
 }
