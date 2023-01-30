@@ -22,13 +22,8 @@ export default function Home() {
 
   const handleMessageSend= async e=>{
         e.preventDefault()
-        try {
-          const res =  sendMessage(formData)
-          console.log(res)
-        } catch (error) {
-          console.log("no")
-        }
-        
+        const res =  sendMessage(formData)
+ 
   }
 
   const handleChange =e=>{
@@ -72,7 +67,7 @@ export default function Home() {
               </p>
               <button>Contact Us</button>
           </div>
-          <div className="landingImage">
+          <div className={styles.landingImage}>
               <img src="/children-7339441_1920.jpg" />
           </div>
       </section>

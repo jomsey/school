@@ -7,6 +7,9 @@
     position: relative;
     display: flex;
 }
+.landingImage img {
+    min-height: 350px;
+}
 
 .landing::after {
     content: "";
