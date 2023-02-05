@@ -32,9 +32,9 @@ export default function NavBar() {
        <div className={styles.links}>
           <ul>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/">About Us</Link></li>
-            <li><Link href="/">Accademics</Link></li>
-            <li><Link href="/">Blog</Link></li>
+            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/accademics">Accademics</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
           </ul>
        </div>
        <div className={styles.socialPack}>

@@ -1,0 +1,99 @@
+.bottomNav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    height: 270px;
+    padding: 40px 0;
+    background-color: rgb(29, 21, 21);
+    color: var(--grey);
+}
+.bottomNav div{
+    height: 100%;
+}
+.bottomNav h4{
+    margin-bottom: 16px;
+    font-size: .9rem;
+    color: var(--secondary);
+    font-weight: 500;
+}
+.bottomNav .badge{
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+.bottomNav span,.links ul li a{
+    font-family: "Roboto",sans-serif;
+    font-size: .8rem;
+    color: var(--grey);
+    
+}
+.linksContainer{
+    display: flex;
+    gap: 32px;
+    justify-content: space-evenly;
+
+}  
+
+.links ul{
+padding:0;
+
+}
+.links ul li,.links .bottomNav span{
+margin-top: 8px;
+}
+
+.siteFooter{
+    background-color: var(--secondary);
+    height: 40px;
+    width: 100%;
+    color: var(--light);
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen  and (max-width:834px){
+   
+.bottomNav{
+    padding: 32px;
+}
+
+
+}
+
+
+@media screen  and (max-width:428px){
+  
+        .bottomNav{
+            grid-template-columns: 1fr;
+            height: auto;
+            padding: 32px;
+
+        }
+        .bottomNav .badge{
+            width: 150px;
+            height: auto;
+            margin: auto;
+        }
+       
+        .bottomNav h4{
+            margin-bottom: 16px;
+            font-size: .8rem;
+        }
+        .bottomNav span,.links ul li a{
+            font-family: "Roboto",sans-serif;
+            font-size: .75rem;
+            
+        }
+
+        .linksContainer{
+            justify-content:space-between;
+        
+        }  
+        
+        
+       
+}
+
