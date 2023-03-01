@@ -1,5 +1,5 @@
-.navContainer{
-    background-color:var(--light);
+.navContainer {
+    background-color: var(--light);
     height: 80px;
     display: flex;
     align-items: center;
@@ -8,14 +8,23 @@
     width: 100%;
     z-index: 1000;
     transition: all 1s linear;
-   
-  
 }
-.toggler{
+
+.toggler {
     display: none;
+    width: 40px;
+    position: relative;
 }
-.fixed{
-    background-color:var(--light);
+
+.toggler span {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1px;
+    display: block;
+}
+
+.fixed {
+    background-color: var(--light);
     height: 80px;
     display: flex;
     align-items: center;
@@ -26,14 +35,14 @@
     position: fixed;
     transition: all 1s linear;
     top: 0;
-    left: 0;}
-.logo{
-   
-    height: 100%;
-   
+    left: 0;
 }
 
-.links ul{
+.logo {
+    height: 100%;
+}
+
+.links ul {
     width: 400px;
     display: flex;
     justify-content: space-between;
@@ -41,76 +50,73 @@
 }
 
 .links a {
-    color:var(--dark);
-    font-size:14px;
-
+    color: var(--dark);
+    font-size: 14px;
 }
 
-.socialPack{
-    width:100px;
-    display:flex;
+.links a:hover {
+    color: var(--primary)
+}
+
+.socialPack {
+    width: 100px;
+    display: flex;
     gap: 16px;
     align-items: center;
 }
 
-.socialPack i{
+.socialPack i {
     color: var(--primary);
     font-size: 1.2rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-
-
-@media screen  and (max-width:834px){
-    .toggler{
-        display: block;
+@media screen and (max-width:834px) {
+    .toggler {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
     }
-    .links{
+    .links {
         position: absolute;
         top: 80px;
         z-index: 100;
         width: 100%;
         left: 0;
         background-color: var(--light);
-        gap:16px;
+        gap: 16px;
         transition: all .5s linear;
         overflow: hidden;
-        height:auto;
-        padding: 60px;
-        display: none;
-        
+        height: 0;
+        padding: 0;
     }
-
-    .links ul{
+    .linksVisible {
+        position: absolute;
+        top: 80px;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+        background-color: var(--light);
+        gap: 16px;
+        transition: all .5s linear;
+        overflow: hidden;
+        height: auto;
+        padding: 60px;
+        display: block;
+    }
+    .links ul,
+    .linksVisible ul {
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap:16px;
+        gap: 16px;
+        align-items: center;
     }
-
-    .linksVisible{
-       height: auto;
-       padding: 60px;
-       position: absolute;
-       top: 80px;
-       z-index: 100;
-       width: 100%;
-       left: 0;
-       background-color: var(--light);
-       gap:16px;
-       transition: all .5s linear;
-       overflow: hidden;
-       
-    }
-
- 
-
 }
 
-@media screen  and (max-width:620px){
-    .socialPack{
-       display:none
+@media screen and (max-width:620px) {
+    .socialPack {
+        display: none
     }
-  
-
 }

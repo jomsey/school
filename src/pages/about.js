@@ -31,7 +31,7 @@ export default function AboutUs(){
           <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar/>
+    
 
       <section className={styles.container}>
            <div className={styles.topper}>

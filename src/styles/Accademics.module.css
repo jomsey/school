@@ -1,0 +1,224 @@
+            .academics_landing {
+                background-color: var(--primary);
+                height: 250px;
+                -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 100% 100%, 0 60%, 0 0);
+                clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 100% 100%, 0 60%, 0 0);
+            }
+            
+            .academics_landing h1 {
+                text-align: center;
+                color: var(--light);
+                font-size: 2rem;
+                padding: 40px 0;
+            }
+            
+            .academicsContainer {
+                width: 80%;
+                margin: auto;
+                position: relative;
+                top: -36px;
+            }
+            
+            .academImage1 {
+                width: 600px;
+            }
+            
+            .group1 div:nth-child(2) {
+                position: absolute;
+                top: -72px;
+                width: 550px;
+                right: 0;
+                background-color: var(--light);
+                padding: 60px 36px;
+            }
+            
+            .group1 div:nth-child(2) p {
+                margin-top: 24px;
+            }
+            
+            .group1 div:nth-child(2) h2,
+            .whyOutstanding h2 {
+                margin-bottom: 24px;
+            }
+            
+            .whyOutstanding {
+                background-color: var(--grey);
+                width: 100%;
+                padding: 60px 96px;
+                margin: 32px 0;
+            }
+            
+            .whyOutstanding p:not(.reasons p) {
+                width: 70%;
+                max-width: 500px;
+            }
+            
+            .reasons {
+                display: flex;
+                height: 300px;
+                margin-top: 60px;
+                justify-content: space-between;
+            }
+            
+            .reason {
+                display: flex;
+                gap: 16px;
+                border: 1px solid var(--secondary);
+                padding: 24px;
+            }
+            
+            .reason h3 {
+                margin-bottom: 16px;
+                color: var(--secondary);
+            }
+            
+            .reason p {
+                margin-top: 16px;
+            }
+            
+            .reason div {
+                width: 400px;
+            }
+            
+            .badge {
+                background-color: var(--secondary);
+                width: 100px !important;
+                height: 100px;
+                border-radius: 50%;
+            }
+            
+            .goal {
+                display: flex;
+                width: 80%;
+                margin: 60px auto;
+                background-color: var(--primary);
+                height: 450px;
+                overflow: hidden;
+            }
+            
+            .goal p {
+                margin-top: 24px;
+                color: var(--grey)
+            }
+            
+            .goal h2 {
+                color: rgb(236, 250, 171);
+                width: 75%;
+            }
+            
+            .goalText {
+                width: 650px;
+                padding: 32px;
+            }
+            
+            .expo {
+                width: 80%;
+                margin: 32px auto 60px auto;
+            }
+            
+            .expo h2,
+            .expo p {
+                text-align: center;
+            }
+            
+            .expo p {
+                margin: 24px auto;
+                width: 80%;
+            }
+            
+            .pics {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+            
+            @media screen and (max-width:1024px) {
+                .academicsContainer {
+                    width: 90%;
+                    margin: auto;
+                    position: relative;
+                    top: -36px;
+                }
+                .academImage1 {
+                    width: 500px;
+                }
+                .group1 div:nth-child(2) {
+                    width: 400px;
+                    padding: 48px 36px;
+                }
+                .whyOutstanding {
+                    background-color: var(--grey);
+                    width: 100%;
+                    padding: 60px 96px;
+                    margin: 36px 0;
+                }
+                .reasons {
+                    height: auto;
+                    gap: 36px;
+                    flex-direction: column;
+                }
+                .goal {
+                    width: 90%;
+                    height: auto;
+                    flex-direction: column;
+                }
+                .goal p {
+                    margin-top: 24px;
+                    color: var(--grey)
+                }
+                .goal h2 {
+                    color: var(--secondary);
+                    width: 80%;
+                }
+                .goalText {
+                    width: auto;
+                    max-width: 650px;
+                    padding: 32px;
+                }
+            }
+            
+            @media screen and (max-width:428px) {
+                .academics_landing {
+                    height: 200px
+                }
+                .academics_landing h1 {
+                    padding: 24px 0;
+                }
+                .academicsContainer {
+                    top: -30px;
+                }
+                .academImage1 {
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+                .group1 div:nth-child(2) {
+                    position: unset;
+                    width: 100%;
+                    padding: 24px 0;
+                }
+                .whyOutstanding {
+                    padding: 32px;
+                }
+                .whyOutstanding p:not(.reasons p) {
+                    width: 80%;
+                }
+                .reasons {
+                    margin-top: 32px;
+                }
+                .reason {
+                    padding: 16px;
+                    flex-direction: column;
+                }
+                .reason div {
+                    width: 100%;
+                }
+                .badge {
+                    width: 70px;
+                }
+                .goal {
+                    margin: 0 auto;
+                }
+                .pics {
+                    grid-template-columns: 1fr;
+                }
+            }

@@ -29,7 +29,6 @@ function Contact() {
           <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar/>
       <Footer/>
       </>
     )

@@ -59,7 +59,6 @@ export default function Home() {
               aliquet et euismod sit sit justo. Hendrerit sit enim posuere et pellentesque scelerisqueid."/>
           <link rel="icon" href="/favicon.ico" />
       </Head>
-     <NavBar/>
       <section className={styles.landing}>
           <div className={styles.intro}>
               <h1>Welecome To <br/>The <span>Canopy School</span></h1>
@@ -176,7 +175,7 @@ export default function Home() {
           </div>
       </section>
 
-      <section className={styles.contactUs}>
+      <section id ="contact" className={styles.contactUs}>
           <div className={styles.messageContainer}>
               <h3>Leave Us a Message</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur</p>

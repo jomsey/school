@@ -1,14 +1,15 @@
 :root {
     --light: #fff;
-    --primary:#E54646;
-    --grey: #EAE7E7;
-    --secondary: rgb(250, 182, 54);
+    --primary: #283c96;
+    --grey: hsl(0, 7%, 91%);
+    --secondary: rgb(145, 83, 140);
     --swiper-theme-color: var(--primary) !important;
     --swiper-navigation-size: 32px !important;
-    --text-para: #5F5F5F;
-    --dark:rgb(17, 16, 16);
-    --m-top-x:48px;
+    --text-para: #777171;
+    --dark: rgb(17, 16, 16);
+    --m-top-x: 48px;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,8 +17,12 @@
     background-size: cover;
     object-fit: cover;
 }
-body{
+
+body {
+    scroll-behavior: smooth;
     background-color: #fff;
+    max-width: 2280px;
+    margin: auto;
 }
 
 h1,
@@ -28,27 +33,29 @@ h5,
 h6 {
     font-family: 'Raleway', sans-serif;
 }
-h2{
+
+h2 {
     font-size: 2.5rem;
 }
-h2>span{
-    color: var(--secondary);
+
+h2>span {
+    color: var(--primary);
 }
-p,button {
+
+p,
+button {
     font-family: 'Roboto', sans-serif;
     color: var(--text-para);
     font-size: 14px;
- 
 }
 
-p{
+p {
     line-height: 30px;
 }
 
 a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-
 }
 
 li {
@@ -61,15 +68,13 @@ img {
     object-fit: cover;
 }
 
-
-@media screen and (max-width:428px){
-    h2{
-        font-size: 2rem;
-    }
-   
-    
+.active {
+    color: var(--primary) !important;
+    font-weight: 600;
 }
 
-
-
- 
+@media screen and (max-width:428px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
