@@ -61,11 +61,10 @@ export default function Home() {
       </Head>
       <section className={styles.landing}>
           <div className={styles.intro}>
-              <h1>Welecome To <br/>The <span>Canopy School</span></h1>
+              <h1>Welcome To <br/>The <span>Canopy School</span></h1>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
               </p>
-              <button>Contact Us</button>
           </div>
           <div className={styles.landingImage}>
               <img src="/children-7339441_1920.jpg" />
@@ -135,7 +134,7 @@ export default function Home() {
       </section>
 
       <section className={styles.reviews}>
-          <h2><span>Reviews</span> From  Community</h2>
+          <h2><span>Reviews</span> From  Parents</h2>
 
           <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
@@ -144,7 +143,6 @@ export default function Home() {
 
           <div className={styles.reviewsSlider}>
               <Swiper spaceBetween={50}
-                     
                       navigation={true}
                       loop={true}
                       modules={[Navigation, Pagination]}
@@ -159,7 +157,7 @@ export default function Home() {
                                       },
                                       1024: {
                                         slidesPerView: 3,
-                                        spaceBetween: 50,
+                                       
                                       },
                                     }}
                       >

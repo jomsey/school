@@ -10,13 +10,9 @@ export default function NavBar() {
   const {pathname} = useRouter()
   
 
-  const handleTogglerClick = ()=>{
-    offCanvasVisible?setOffCanvasVisible(false):setOffCanvasVisible(true)
-  }
 
   const handleScroll=()=>window.scrollY>=300?setNavFixed(true):setNavFixed(false);
   
-  console.log(styles)
 
   useEffect(() => {
     window.addEventListener("scroll",handleScroll)
@@ -32,10 +28,10 @@ export default function NavBar() {
     
        <div className={offCanvasVisible?styles.linksVisible:styles.links}>
           <ul>
-            <li><Link className={pathname==="/"?"active":""} href="/">Home</Link></li>
-            <li><Link className={pathname==="/academics"?"active":""} href="/academics">Academics</Link></li>
-            <li><Link className={pathname==="/about"?"active":""} href="/about">About Us</Link></li>
-            <li><Link  href="/#contact">Contact</Link></li>
+            <li onClick={()=>setOffCanvasVisible(false)}><Link className={pathname==="/"?"active":""} href="/">Home</Link></li>
+            <li onClick={()=>setOffCanvasVisible(false)}><Link className={pathname==="/academics"?"active":""} href="/academics">Academics</Link></li>
+            <li onClick={()=>setOffCanvasVisible(false)}><Link className={pathname==="/about"?"active":""} href="/about">About Us</Link></li>
+            <li onClick={()=>setOffCanvasVisible(false)}><Link  href="/#contact">Contact</Link></li>
           </ul>
        </div>
        <div className={styles.socialPack}>
@@ -44,7 +40,8 @@ export default function NavBar() {
        <i className="fa fa-linkedin"></i>
        </div>
 
-       <div className={styles.toggler} onClick={handleTogglerClick}>
+       <div className={styles.toggler} onClick={()=>offCanvasVisible?setOffCanvasVisible(false):setOffCanvasVisible(true)
+}>
         <span></span>
         <span></span>
         <span></span>

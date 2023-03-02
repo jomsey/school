@@ -1,7 +1,7 @@
 /******************LANDING*************************/
 
 .landing {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-color: var(--grey);
     position: relative;
@@ -59,7 +59,7 @@
 .intro p {
     margin: 32px 0;
     color: black;
-    width: 75%;
+    width: 100%;
 }
 
 
@@ -94,13 +94,16 @@
 /************************SCHOOL MISSION*************************/
 
 .mission {
-    padding: 60px;
     background-size: cover;
     background-image: url(/education_poll_caro_original_53750.jpg);
-    height: 400px;
+    height: 500px;
+    min-height: 400px !important;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
 }
 
 .mission::before {
@@ -110,29 +113,28 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     z-index: 1;
 }
 
 .mission p,
 .mission h2 {
-    text-align: center;
     color: var(--light);
     z-index: 2;
+    text-align: center;
 }
 
 .mission p {
     width: 65%;
-    margin: auto;
     margin-top: 32px;
-    color: rgb(199, 196, 196);
+    color: rgb(240, 238, 238);
 }
 
 
 /************************SCHOOL VISION*************************/
 
 .vision {
-    height: 300px;
+    height: 350px;
     background-color: var(--grey);
     margin-top: var(--m-top-x);
     text-align: center;
@@ -201,7 +203,7 @@
     display: flex;
     justify-content: center;
     margin-top: 32px;
-    gap: 32px;
+    gap: 32px !important;
     position: relative;
 }
 
@@ -237,7 +239,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--primary);
+    /* opacity: .7; */
     z-index: -1;
 }
 
@@ -264,17 +267,25 @@
     margin-top: 24px;
     outline: none;
     color: var(--grey);
+    border-radius: 10px;
 }
+
+
+/* .contactUs .messageContainer input:focus,
+.contactUs .messageContainer textarea:focus {
+    box-shadow: 0 0 0 2px #fff;
+} */
 
 .contactUs .messageContainer button {
     margin-top: 24px;
-    background-color: var(--primary);
-    color: #fff;
+    background-color: #fff;
+    color: var(--primary);
     border: none;
     padding: 16px;
     width: 100%;
     cursor: pointer;
-    transition: all .3s ease
+    transition: all .3s ease;
+    border-radius: 10px;
 }
 
 .contactUs .messageContainer button:hover {
@@ -341,7 +352,7 @@
         padding: 60px;
     }
     .intro p {
-        width: 85%;
+        width: 100%;
     }
     .schoolServices {
         margin: 30px 60px 60px 60px;
@@ -383,6 +394,7 @@
         padding: 60px 32px;
         background-size: cover;
         height: auto;
+        min-height: 400px;
     }
     .mission p {
         width: 85%;
@@ -478,6 +490,7 @@
         font-family: "Roboto", sans-serif;
         font-size: .75rem;
     }
+   
     .linksContainer {
         justify-content: space-between;
     }

@@ -40,7 +40,7 @@ function Accademics() {
             <img src="/bg_5.jpg" alt="..."/>
           </div>
           <div>
-            <h2><span>Lorem</span> ipsum dolor sit.</h2>
+            <h2><span>Lorem ipsum dolor sit </span> </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores doloribus est veniam atque doloremque ipsa hic amet laboriosam. Autem laborum obcaecati dignissimos explicabo molestias expedita commodi modi alias reprehenderit!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores doloribus est veniam atque doloremque ipsa hic amet laboriosam. Autem laborum obcaecati dignissimos explicabo molestias expedita commodi modi alias reprehenderit!</p>
           </div>

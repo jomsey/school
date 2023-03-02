@@ -30,6 +30,7 @@
                 right: 0;
                 background-color: var(--light);
                 padding: 60px 36px;
+                border-top-right-radius: 36px;
             }
             
             .group1 div:nth-child(2) p {
@@ -102,7 +103,7 @@
             }
             
             .goal h2 {
-                color: rgb(236, 250, 171);
+                color: #fff;
                 width: 75%;
             }
             
@@ -167,7 +168,6 @@
                     color: var(--grey)
                 }
                 .goal h2 {
-                    color: var(--secondary);
                     width: 80%;
                 }
                 .goalText {
