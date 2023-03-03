@@ -66,7 +66,7 @@ export default function AboutUs(){
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
                 </p>
                 <div className={styles.abtImageDouble}>
-                    <img src="/bg_5.jpg" alt="..."/>
+                    <img src="/c5.webp" alt="..."/>
                 </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?

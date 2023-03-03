@@ -67,7 +67,7 @@ export default function Home() {
               </p>
           </div>
           <div className={styles.landingImage}>
-              <img src="/children-7339441_1920.jpg" />
+              <img src="/c5.webp" />
           </div>
       </section>
 
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             <div className={styles.aboutUsImage} >
-                  <img src="/bg_5.jpg"/>
+                  <img src="/c3.jpg"/>
             </div>
         </div>
       </section>

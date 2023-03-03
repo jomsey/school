@@ -1,82 +1,66 @@
 const images=[
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
+        '/c5.webp',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+        '/c5.webp'
+        ,
+      width: 675,
+      height: 1000,
+    },
+    {
+      largeURL:
+        '/c2.jpg',
+      thumbnailURL:
+        '/c2.jpg'
+        ,
       width: 1875,
       height: 2500,
     },
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+        '/c3.jpg',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
-      width: 1669,
-      height: 2500,
-    },
-    {
-      largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
-      thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
-      width: 2500,
-      height: 1666,
-    },
-    {
-      largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
-      thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+        '/c3.jpg'
+        ,
       width: 1875,
       height: 2500,
     },
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+        '/c1.jpg',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
-      width: 1669,
-      height: 2500,
-    },
-    {
-      largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
-      thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+        '/c1.jpg'
+        ,
       width: 1875,
       height: 2500,
     },
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+        '/bg_5.jpg',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
-      width: 1669,
-      height: 2500,
-    },
-    {
-      largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
-      thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
-      width: 2500,
-      height: 1666,
-    },
-    {
-      largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
-      thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+        '/bg_5.jpg'
+        ,
       width: 1875,
       height: 2500,
     },
-    {
+   {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+        '/children-7339441_1920.jpg',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
-      width: 1669,
+        '/children-7339441_1920.jpg'
+        ,
+      width: 1875,
+      height: 2500,
+    },
+   
+   {
+      largeURL:
+        '/black-children-in-school.jpg',
+      thumbnailURL:
+        '/black-children-in-school.jpg'
+        ,
+      width: 1875,
       height: 2500,
     },
    

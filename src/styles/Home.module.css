@@ -1,7 +1,7 @@
 /******************LANDING*************************/
 
 .landing {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: var(--grey);
     position: relative;
@@ -462,7 +462,7 @@
         margin: 32px;
     }
     .reviews p {
-        width: 85%;
+        width: 100%;
     }
     .mission {
         height: 70vh;

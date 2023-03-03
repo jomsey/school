@@ -37,7 +37,7 @@ function Accademics() {
     <section className={styles.academicsContainer}>
        <div className={styles.group1}>
           <div className={styles.academImage1}>
-            <img src="/bg_5.jpg" alt="..."/>
+            <img src="/c1.jpg" alt="..."/>
           </div>
           <div>
             <h2><span>Lorem ipsum dolor sit </span> </h2>
@@ -49,7 +49,7 @@ function Accademics() {
     </section>
     <section className={styles.goal}>
       <div className={styles.goalImage}>
-      <img src="/bg_5.jpg" alt="..."/>
+      <img src="/c2.jpg" alt="..."/>
       </div>
       <div className={styles.goalText}>
         <h2>We add value to our kid's journey</h2>
@@ -68,7 +68,7 @@ function Accademics() {
         <div className={styles.reason}>
             <span className={styles.badge}></span>
             <div>
-            <h3>Lorem, ipsum dolor.</h3>
+            <h3>God Fearing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis accusamus ducimus, voluptate iure fuga voluptatum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis accusamus ducimus, voluptate iure fuga voluptatum.</p>
             </div>
@@ -77,7 +77,7 @@ function Accademics() {
           <div className={styles.reason}>
             <span className={styles.badge}></span>
             <div>
-            <h3>Lorem, ipsum dolor.</h3>
+            <h3>Mental Strength</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis accusamus ducimus, voluptate iure fuga voluptatum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis accusamus ducimus, voluptate iure fuga voluptatum.</p>
             </div>
@@ -92,7 +92,7 @@ function Accademics() {
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, neque. Enim possimus recusandae et ipsa dignissimos. Sit autem temporibus sint aspernatur illum ducimus assumenda consequuntur ipsa, fugit rerum, repudiandae placeat.</p>
       <div className={styles.pics}>
         <img src="/bg_5.jpg" alt="..."/>
-       <img src="/bg_5.jpg" alt="..."/>
+       <img src="/black-children-in-school.jpg" alt="..."/>
       
 
 </div>

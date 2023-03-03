@@ -6,7 +6,7 @@ const services=[
      },
      {id:2,
         name:"Equipped Library",
-        bg:"tomato",
+        bg:"forestgreen",
      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus"
      },
      {id:3,
@@ -15,7 +15,7 @@ const services=[
      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus"
      },
      {id:4,name:"Daily Transport",
-     bg:"rgba(6, 73, 85,.7)",
+     bg:"turquoise",
      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus"
      },
      
