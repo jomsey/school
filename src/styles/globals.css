@@ -1,8 +1,8 @@
 :root {
     --light: #fff;
-    --primary: #eb3333;
+    --primary: #3345eb;
     --grey: hsl(0, 7%, 91%);
-    --secondary: rgb(148, 118, 34);
+    --secondary: rgb(255, 155, 124);
     --swiper-theme-color: var(--primary) !important;
     --swiper-navigation-size: 32px !important;
     --text-para: #777171;

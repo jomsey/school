@@ -175,7 +175,7 @@ export default function Home() {
 
       <section id ="contact" className={styles.contactUs}>
           <div className={styles.messageContainer}>
-              <h3>Leave Us a Message</h3>
+              <h3>Let Us Know How We Can Help</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur</p>
               
               <form method="POST">

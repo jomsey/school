@@ -104,8 +104,7 @@
         height: auto;
         padding: 60px;
         display: block;
-        border-bottom:1px solid var(--secondary);
-        border-top:1px solid var(--secondary);
+        background-color: var(--secondary);
     }
     .links ul,
     .linksVisible ul {
@@ -115,6 +114,9 @@
         gap: 16px;
         align-items: center;
 
+    }
+    .linksVisible ul  a{
+        color:#fff;
     }
 }
 
