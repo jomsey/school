@@ -31,7 +31,9 @@ export default function NavBar() {
             <li onClick={()=>setOffCanvasVisible(false)}><Link className={pathname==="/"?"active":""} href="/">Home</Link></li>
             <li onClick={()=>setOffCanvasVisible(false)}><Link className={pathname==="/academics"?"active":""} href="/academics">Academics</Link></li>
             <li onClick={()=>setOffCanvasVisible(false)}><Link className={pathname==="/about"?"active":""} href="/about">About Us</Link></li>
+            <li onClick={()=>setOffCanvasVisible(false)}><Link  href="#">Administration</Link></li>
             <li onClick={()=>setOffCanvasVisible(false)}><Link  href="/#contact">Contact</Link></li>
+
           </ul>
        </div>
        <div className={styles.socialPack}>

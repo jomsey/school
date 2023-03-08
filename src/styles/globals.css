@@ -1,8 +1,8 @@
 :root {
     --light: #fff;
-    --primary: #3345eb;
+    --primary: #fa4949;
     --grey: hsl(0, 7%, 91%);
-    --secondary: rgb(255, 155, 124);
+    --secondary: rgb(23, 27, 252);
     --swiper-theme-color: var(--primary) !important;
     --swiper-navigation-size: 32px !important;
     --text-para: #777171;
@@ -56,7 +56,7 @@ p {
 a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-    color:var(--dark)
+    color: var(--dark)
 }
 
 li {
