@@ -12,7 +12,7 @@ import styles from '@/styles/Home.module.css'
 import galleryImages from '../utils/gallery-images'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import servicesOffered from '../utils/services-offered'
-import { Navigation, Pagination} from 'swiper';
+import { Navigation, Pagination,Autoplay} from 'swiper';
 import React from 'react';
 import sendMessage from '../services/http-service';
 import Footer from '../components/Footer';
@@ -145,7 +145,12 @@ export default function Home() {
               <Swiper spaceBetween={50}
                       navigation={true}
                       loop={true}
-                      modules={[Navigation, Pagination]}
+                      autoplay={{
+                                delay:3000,
+                                pauseOnMouseEnter:true,
+                                disableOnInteraction:false
+                      }}
+                      modules={[Navigation, Pagination,Autoplay]}
                       breakpoints={{
                                       640: {
                                         slidesPerView: 1,

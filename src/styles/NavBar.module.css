@@ -104,7 +104,6 @@
         height: auto;
         padding: 60px;
         display: block;
-        background-color: var(--secondary);
     }
     .links ul,
     .linksVisible ul {
@@ -113,11 +112,15 @@
         width: 100%;
         gap: 16px;
         align-items: center;
+        
 
     }
-    .linksVisible ul  a{
-        color:#fff;
+    .linksVisible ul li{
+        text-align:center;
+        width:100%;
+
     }
+    
 }
 
 @media screen and (max-width:620px) {

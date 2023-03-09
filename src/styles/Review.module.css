@@ -7,6 +7,7 @@
     color: var(--secondary);
     text-align: left !important;
     margin: auto !important;
+    font-size:.8rem;
 }
 
 .review span{
@@ -14,4 +15,10 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-left:  60px;
+}
+
+@media screen and (max-width:500px) {
+    .review span{
+        margin-left:0;
+    }
 }
