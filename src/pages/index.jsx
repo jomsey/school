@@ -39,7 +39,7 @@ export default function Home() {
     <>
       <Head>
           <meta charset="utf-8"/>
-          <title>The Canopy School</title>
+          <title>Lodwar Galilee School</title>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <meta name="description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
             vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
@@ -61,7 +61,7 @@ export default function Home() {
       </Head>
       <section className={styles.landing}>
           <div className={styles.intro}>
-              <h1>Welcome To <br/>The <span>Canopy School</span></h1>
+              <h1>Welcome To <br/>Lodwar <span>Galilee School</span></h1>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
               </p>

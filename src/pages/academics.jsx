@@ -9,7 +9,7 @@ function Accademics() {
     <>
     <Head>
        <meta charset="utf-8"/>
-       <title>Accademics: The Canopy School</title>
+       <title>Academics: Lodwar Galilee School</title>
        <meta name="viewport" content="width=device-width, initial-scale=1"/>
        <meta name="description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
          vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
@@ -20,9 +20,7 @@ function Accademics() {
        <meta name="robots" content="index, follow"/>
        <meta name="rating" content="general"/>
        <meta property="og:type" content="website"/>
-       <meta property="og:title" content="The Canopy School"/>
-       <meta property="og:url" content="http(s)://www.thecanopyschool.com"/>
-       <meta property="og:image" content="http(s)://www.thecanopyschool.com"/>
+       <meta property="og:title" content="Lodwar Galilee School"/>
        <meta property="og:description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
            vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
            sagittis faucibus odio convallis. Tempor vulputate ut purus elementum elit. Semper
@@ -32,7 +30,7 @@ function Accademics() {
    
 
     <div className={styles.academics_landing}>
-      <h1>Academics On The Canopy School</h1>
+      <h1>Academics At LGS</h1>
     </div>  
     <section className={styles.academicsContainer}>
        <div className={styles.group1}>

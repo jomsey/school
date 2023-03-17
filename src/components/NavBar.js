@@ -24,7 +24,7 @@ export default function NavBar() {
 
   return (
     <div className={navFixed?styles.fixed:styles.navContainer}>
-       <div className={styles.logo}><img src="/logo.svg" alt="logo"/></div>
+       <div className={styles.logo}><img src="/logo2.svg" alt="logo"/></div>
     
        <div className={offCanvasVisible?styles.linksVisible:styles.links}>
           <ul>

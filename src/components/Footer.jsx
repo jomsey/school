@@ -6,7 +6,7 @@ function Footer() {
     <>
      <section className={styles.bottomNav}>
           <div className={styles.badge}>
-              <img src="/badge.png" />
+              <img src="/badge2.jpg" />
           </div>
 
           <div className={styles.linksContainer}>
@@ -16,7 +16,7 @@ function Footer() {
                     <ul>
                       <li><Link href="/">Home</Link></li>
                       <li><Link href="/">About Us</Link></li>
-                      <li><Link href="/">Accademics</Link></li>
+                      <li><Link href="/">Academics</Link></li>
                       <li><Link href="/">Blog</Link></li>
                       <li><Link href="/">Contact Us</Link></li>
                     </ul>
@@ -49,7 +49,7 @@ function Footer() {
           </div>
       </section>
       <footer className={styles.siteFooter}>
-         &copy; The Canopy School 2023
+         &copy; LGS 2023
       </footer>
     </>
   )

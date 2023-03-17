@@ -10,7 +10,7 @@ export default function AboutUs(){
         <>
         <Head>
           <meta charset="utf-8"/>
-          <title>About Us: The Canopy School</title>
+          <title>About Us: Lodwar Galilee School</title>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <meta name="description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
             vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
@@ -21,9 +21,8 @@ export default function AboutUs(){
           <meta name="robots" content="index, follow"/>
           <meta name="rating" content="general"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:title" content="The Canopy School"/>
-          <meta property="og:url" content="http(s)://www.thecanopyschool.com"/>
-          <meta property="og:image" content="http(s)://www.thecanopyschool.com"/>
+          <meta property="og:title" content="Lodwar Galilee School"/>
+          
           <meta property="og:description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
               vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
               sagittis faucibus odio convallis. Tempor vulputate ut purus elementum elit. Semper
@@ -35,7 +34,7 @@ export default function AboutUs(){
 
       <section className={styles.container}>
            <div className={styles.topper}>
-                <h1>About The Canopy School</h1>
+                <h1>About LGS</h1>
            </div>
 
            <div className={styles.abtContainer}>
