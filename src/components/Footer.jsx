@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styles from "@/styles/Footer.module.css"
+import config from "jsconfig.json"
+
 
 function Footer() {
   return (
@@ -49,7 +51,8 @@ function Footer() {
           </div>
       </section>
       <footer className={styles.siteFooter}>
-         &copy; LGS 2023
+         &copy; {`${config.siteName} ${new Date().getFullYear()}`}
+         <small style={{color:"cyan",marginTop:10}}>developed by Muwanguzi Joseph</small>
       </footer>
     </>
   )

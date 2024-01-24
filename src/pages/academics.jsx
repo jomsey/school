@@ -1,7 +1,9 @@
-import NavBar from '../components/NavBar'
 import Head from 'next/head'
 import styles from '@/styles/Accademics.module.css'
 import Footer from '../components/Footer'
+import config from "jsconfig.json"
+import Image from 'next/image'
+
 
 
 function Accademics() {
@@ -9,18 +11,18 @@ function Accademics() {
     <>
     <Head>
        <meta charset="utf-8"/>
-       <title>Academics: Lodwar Galilee School</title>
+       <title>Academics: {config.siteName}</title>
        <meta name="viewport" content="width=device-width, initial-scale=1"/>
        <meta name="description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
          vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
          sagittis faucibus odio convallis. Tempor vulputate ut purus elementum elit. Semper
          aliquet et euismod sit sit justo. Hendrerit sit enim posuere et pellentesque scelerisqueid"/>
        <meta name="author" content="Muwanguzi Joseph"/>
-       <meta name="copyright" content="Canopy School"/>
+       <meta name="copyright" content={config.siteName}/>
        <meta name="robots" content="index, follow"/>
        <meta name="rating" content="general"/>
        <meta property="og:type" content="website"/>
-       <meta property="og:title" content="Lodwar Galilee School"/>
+       <meta property="og:title" content={config.siteName}/>
        <meta property="og:description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
            vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
            sagittis faucibus odio convallis. Tempor vulputate ut purus elementum elit. Semper
@@ -30,12 +32,17 @@ function Accademics() {
    
 
     <div className={styles.academics_landing}>
-      <h1>Academics At LGS</h1>
+      <h1>Academics At {config.siteName}</h1>
     </div>  
     <section className={styles.academicsContainer}>
        <div className={styles.group1}>
           <div className={styles.academImage1}>
-            <img src="/c1.jpg" alt="..."/>
+            <Image
+               width={500}
+               height={300}
+               alt='.........'
+               src="/c1.jpg"
+            />
           </div>
           <div>
             <h2><span>Lorem ipsum dolor sit </span> </h2>

@@ -2,10 +2,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Head from 'next/head'
-import Link from 'next/link'
 import Image from 'next/image'
 import Review from '../components/Review'
-import NavBar from '../components/NavBar'
 import Gallery from '../components/Gallery'
 import Service from '../components/Service'
 import styles from '@/styles/Home.module.css'
@@ -16,6 +14,8 @@ import { Navigation, Pagination,Autoplay} from 'swiper';
 import React from 'react';
 import sendMessage from '../services/http-service';
 import Footer from '../components/Footer';
+import config  from 'jsconfig.json';
+
 
 
 export default function Home() {
@@ -39,18 +39,18 @@ export default function Home() {
     <>
       <Head>
           <meta charset="utf-8"/>
-          <title>Lodwar Galilee School</title>
+          <title>{config.siteName}</title>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <meta name="description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
             vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
             sagittis faucibus odio convallis. Tempor vulputate ut purus elementum elit. Semper
             aliquet et euismod sit sit justo. Hendrerit sit enim posuere et pellentesque scelerisqueid"/>
           <meta name="author" content="Muwanguzi Joseph"/>
-          <meta name="copyright" content="Canopy School"/>
+          <meta name="copyright" content={config.siteName}/>
           <meta name="robots" content="index, follow"/>
           <meta name="rating" content="general"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:title" content="The Canopy School"/>
+          <meta property="og:title" content={config.siteName}/>
           <meta property="og:url" content="https://www.thecanopyschool.com"/>
           <meta property="og:image" content="https://www.thecanopyschool.com"/>
           <meta property="og:description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
@@ -61,13 +61,18 @@ export default function Home() {
       </Head>
       <section className={styles.landing}>
           <div className={styles.intro}>
-              <h1>Welcome To <br/>Lodwar <span>Galilee School</span></h1>
+              <h1>Welcome To <br/>{config.siteName?.split(" ")[0]} <span>{config.siteName?.split(" ").slice(1).join(" ")}</span></h1>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
               </p>
           </div>
           <div className={styles.landingImage}>
-              <img src="/children-7339441_1920.jpg" />
+                <Image
+                   src="/children-7339441_1920.jpg" 
+                   width={1000}
+                   height={700}
+                   alt='..........'
+                />
           </div>
       </section>
 
@@ -128,7 +133,11 @@ export default function Home() {
             </div>
 
             <div className={styles.aboutUsImage} >
-                  <img src="/c3.jpg"/>
+                  <Image alt="....."
+                   width={600}
+                   height={600}
+                   src="/c3.jpg"/>
+                  
             </div>
         </div>
       </section>

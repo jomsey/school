@@ -1,4 +1,4 @@
-{
+{ "siteName":"Lodwar Galille School",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
