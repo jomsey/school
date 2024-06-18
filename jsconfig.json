@@ -1,4 +1,5 @@
-{ "siteName":"Lodwar Galille School",
+{ "siteName":"Little Stars School",
+"domain":"http:://www.xm.com",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

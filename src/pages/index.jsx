@@ -51,8 +51,8 @@ export default function Home() {
           <meta name="rating" content="general"/>
           <meta property="og:type" content="website"/>
           <meta property="og:title" content={config.siteName}/>
-          <meta property="og:url" content="https://www.thecanopyschool.com"/>
-          <meta property="og:image" content="https://www.thecanopyschool.com"/>
+          <meta property="og:url" content={config.siteName}/>
+          <meta property="og:image" content={config.siteName}/>
           <meta property="og:description" content="Lorem ipsum dolor sit amet consectetur. Dictum nisl velit ultricies adipiscing. Porttitor et
               vitae in sit tellus iaculis felis aenean nascetur. Et praesent dictumst odio at. Viverra
               sagittis faucibus odio convallis. Tempor vulputate ut purus elementum elit. Semper
