@@ -72,10 +72,8 @@ export default function AboutUs(){
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
                 </p>
 
-
-
            </div>
-           
+           <h2>School Policies and Procedures</h2>
         </section>
         <Footer/>
         </>

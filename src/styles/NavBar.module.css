@@ -71,6 +71,26 @@
     cursor: pointer;
 }
 
+.banner {
+    width: 100%;
+    padding: 10px 32px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light);
+}
+
+.contacts {
+    display: flex;
+    gap: 16px;
+}
+
+.contacts small {
+    font-size: 14px;
+    font-family: "Loto", sans-serif;
+}
+
 @media screen and (max-width:834px) {
     .toggler {
         display: flex;
@@ -109,22 +129,22 @@
     .linksVisible ul {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        gap: 16px;
+        width: max-content !important;
+        gap: 32px;
         align-items: center;
-        
-
     }
-    .linksVisible ul li{
-        text-align:center;
-        width:100%;
-
+    .linksVisible ul li {
+        text-align: center;
+        width: 100% !important;
     }
-    
 }
 
 @media screen and (max-width:620px) {
     .socialPack {
         display: none
+    }
+    .contacts {
+        flex-direction: column;
+        padding: 24px;
     }
 }

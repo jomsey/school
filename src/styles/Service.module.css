@@ -11,12 +11,15 @@
     padding: 0 18px;
     transform: rotateZ(5deg);
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .singleService h3 {
     color: var(--light);
     font-size: 22px;
     margin: unset !important;
+    font-weight: 600;
 }
 
 .singleService p {
@@ -24,6 +27,7 @@
     margin: unset !important;
     width: auto !important;
     font-weight: 300;
+    z-index: 3;
 }
 
 @media screen and (max-width:800px) {

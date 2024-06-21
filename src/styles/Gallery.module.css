@@ -5,7 +5,8 @@
     grid-row-gap: 0px;
     height: auto;
     padding: 90px 24px;
-    /* background-color: #242424; */
+    padding-top: 45px;
+    background-color: #242424;
     gap: 10px;
 }
 

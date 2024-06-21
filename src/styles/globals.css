@@ -4,13 +4,13 @@
 }
 
 :root {
-    --light: #fff;
-    --primary: #22673d;
+    --light: #ffffff;
+    --primary: #d5248e;
     --grey: hsl(0, 7%, 91%);
-    --secondary: #a24330;
+    --secondary: #ffa500;
     --swiper-theme-color: var(--primary) !important;
     --swiper-navigation-size: 32px !important;
-    --text-para: #3c3b3b;
+    --text-para: #1e5d5f;
     --dark: rgb(17, 16, 16);
     --m-top-x: 48px;
 }
@@ -41,6 +41,9 @@ h6 {
 
 h2 {
     font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 h2>span {
@@ -49,7 +52,7 @@ h2>span {
 
 p,
 button {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Loto', sans-serif;
     color: var(--text-para);
     font-size: 14px;
 }

@@ -2,15 +2,13 @@ import Link from 'next/link'
 import styles from '@/styles/NavBar.module.css'
 import {useEffect,useState} from "react"
 import {useRouter} from 'next/router'
+import {FaFacebook,FaTwitter} from "react-icons/fa6"
 
 
 export default function NavBar() {
   const [navFixed,setNavFixed] = useState(false);
   const [offCanvasVisible,setOffCanvasVisible] = useState(false);
   const {pathname} = useRouter()
-  
-
-
   const handleScroll=()=>window.scrollY>=300?setNavFixed(true):setNavFixed(false);
   
 
@@ -23,7 +21,20 @@ export default function NavBar() {
 
 
   return (
-    <div className={navFixed?styles.fixed:styles.navContainer}>
+    <>
+    {/* <div className={styles.banner}>
+      <div className={styles.contacts}>
+         <small>+254-114-411-986</small>
+         <small>+254-114-411-986</small>
+         <small>ouremail@domain.com</small>
+      </div>
+      <div className={styles.socialPack}>
+       
+       <FaFacebook/>
+       <FaTwitter/>
+       </div>
+    </div> */}
+     <div className={navFixed?styles.fixed:styles.navContainer}>
        <div className={styles.logo}><img src="/logo2.svg" alt="logo"/></div>
     
        <div className={offCanvasVisible?styles.linksVisible:styles.links}>
@@ -36,11 +47,7 @@ export default function NavBar() {
 
           </ul>
        </div>
-       <div className={styles.socialPack}>
-       <i className="fa fa-facebook-official"></i>
-       <i className="fa fa-twitter"></i>
-       <i className="fa fa-linkedin"></i>
-       </div>
+       
 
        <div className={styles.toggler} onClick={()=>offCanvasVisible?setOffCanvasVisible(false):setOffCanvasVisible(true)
 }>
@@ -49,5 +56,7 @@ export default function NavBar() {
         <span></span>
       </div>
     </div>
+    </>
+   
   )
 }

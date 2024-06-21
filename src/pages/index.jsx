@@ -17,7 +17,6 @@ import Footer from '../components/Footer';
 import config  from 'jsconfig.json';
 
 
-
 export default function Home() {
   const [formData,setFormData] = React.useState({})
 
@@ -62,9 +61,7 @@ export default function Home() {
       <section className={styles.landing}>
           <div className={styles.intro}>
               <h1>Welcome To <br/>{config.siteName?.split(" ")[0]} <span>{config.siteName?.split(" ").slice(1).join(" ")}</span></h1>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-              </p>
+              <p>A place where learning is an adventure and excellence is an a habit.</p>
           </div>
           <div className={styles.landingImage}>
                 <Image
@@ -75,8 +72,48 @@ export default function Home() {
                 />
           </div>
       </section>
+      <section className={styles.aboutUsContainer} >
+        <div className={styles.aboutUs}>
+            <div className={styles.aboutUsText}>
+            <h2><span>About</span> Us</h2>
 
-      <section className={styles.schoolServices}>
+                  <p>
+                    At {config.siteName}, we believe in the holistic development of our students. Our comprehensive curriculum is designed to challenge and inspire, ensuring that each child can achieve their fullest potential.We are dedicated to fostering ana environment where students can explore their passion,develop  critical thinking skills and grow into well-rounded individuals. Beyond academics , we offer a variety of extracurricular activities, including sports , arts, and clubs, allowing students to discover and cultivate their talents and interests.
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+                  </p>
+
+                  <button>Read More</button>
+            </div>
+
+            <div className={styles.aboutUsImage} >
+                  <Image alt="....."
+                   width={600}
+                   height={600}
+                   src="/c3.jpg"/>
+                  
+            </div>
+        </div>
+      </section>
+     
+      <section className={styles.base}>
+        <div><h2>FIND RIGHT EDUCATION FOR YOUR KID</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maxime. Veritatis suscipit non, officia praesentium vero sint harum deleniti corrupti autem, tempora ut voluptates!</p>
+        </div>
+        <Image src="/c1.jpg" alt="...." width={1200} height={500}/>
+      </section>
+
+      <section className={styles.mission}>
+            <h2>Nurturing Your Child</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
+            </p>
+      </section>
+ <section className={styles.schoolServices}>
             <h2><span>What</span> We Offer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
@@ -93,17 +130,28 @@ export default function Home() {
               )}
             </div>
       </section>
+      <section className={styles.beta}>
+         <div>
+         <h2>EDUCATION IS THE MOST POWERFUL WEAPON</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, maiores? Reiciendis, eligendi illum. Sint ea ad nisi? Magni, reprehenderit dicta iste voluptate, dolore quam magnam minima corporis tenetur expedita molestiae.</p>
 
-      <section className={styles.mission}>
-            <h2>Nurturing Your Child</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-            </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, maiores? Reiciendis, eligendi illum. Sint ea ad nisi? Magni, reprehenderit dicta iste voluptate, dolore quam magnam minima corporis tenetur expedita molestiae.</p>
+          <button>Learn More</button>
+         </div>
+         <div className={styles.images}>
+         <Image alt="....."
+                   width={600}
+                   height={600}
+                   src="/c3.jpg"/><Image alt="....."
+                   width={600}
+                   height={600}
+                   src="/c1.jpg"/><Image alt="....."
+                   width={600}
+                   height={600}
+                   src="/c2.jpg"/>
+         </div>
       </section>
-
       <section className={styles.gallery}>
-            <h2><span>Our</span> Photos Gallery</h2>
             <Gallery 
               galleryID="gallery"
               images={galleryImages}/>
@@ -117,30 +165,7 @@ export default function Home() {
           </p>
       </section>
 
-      <section className={styles.aboutUsContainer} >
-        <h2><span>About</span> Us</h2>
-        <div className={styles.aboutUs}>
-            <div className={styles.aboutUsText}>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-                  </p>
-
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis hic ratione, deserunt aperiam nostrum quam quis impedit delectus sunt ipsam saepe amet consectetur molestias id totam iste! Autem, libero?
-                  </p>
-            </div>
-
-            <div className={styles.aboutUsImage} >
-                  <Image alt="....."
-                   width={600}
-                   height={600}
-                   src="/c3.jpg"/>
-                  
-            </div>
-        </div>
-      </section>
+      
 
       <section className={styles.reviews}>
           <h2><span>Reviews</span> From  Parents</h2>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from "@/styles/Footer.module.css"
 import config from "jsconfig.json"
+import {FaF, FaFacebook,FaTwitter} from "react-icons/fa6"
 
 
 function Footer() {
@@ -17,34 +18,30 @@ function Footer() {
                     <h4>Main Links</h4>
                     <ul>
                       <li><Link href="/">Home</Link></li>
-                      <li><Link href="/">About Us</Link></li>
-                      <li><Link href="/">Academics</Link></li>
+                      <li><Link href="/about">About Us</Link></li>
+                      <li><Link href="/academics">Academics</Link></li>
                       <li><Link href="/">Blog</Link></li>
-                      <li><Link href="/">Contact Us</Link></li>
+                      <li><Link href="/contact">Contact Us</Link></li>
                     </ul>
                 </div>
 
                 <div className={styles.links}>
                     <h4>Other Links</h4>
                     <ul>
-                      <li><Link href="/">Link 1</Link></li>
-                      <li><Link href="/">Link 2</Link></li>
-                      <li><Link href="/">Link 3</Link></li>
-                      <li><Link href="/">Link 4</Link></li>
-                      <li><Link href="/">Link 5</Link></li>
-                     
+                      <li><Link href="/">Privacy policy</Link></li>
+                      <li><Link href="/">Terms of use</Link></li>
+                      <li><Link href="/">Disclaimer</Link></li>
                     </ul>
 
                 </div>
           </div>
           <div className={styles.contacts}>
             <h4>Contacts</h4>
-            {/* <div className={styles.socialPack}>
-                <i class="fa fa-facebook-official"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-linkedin"></i>
+            <div className={styles.socialPack}>
+            <FaFacebook/>
+            <FaTwitter/>
               </div>
-                <br/> */}
+                <br/>
                 <span>+254-000-000-000</span>
                 <br/>
                 <span>+254-111-000-000</span>
@@ -52,7 +49,6 @@ function Footer() {
       </section>
       <footer className={styles.siteFooter}>
          &copy; {`${config.siteName} ${new Date().getFullYear()}`}
-         <small style={{color:"cyan",marginTop:10}}>developed by Muwanguzi Joseph</small>
       </footer>
     </>
   )

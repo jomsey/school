@@ -8,6 +8,7 @@
     text-align: left !important;
     margin: auto !important;
     font-size: .8rem;
+    border: 1px solid var(--primary);
 }
 
 .review span {

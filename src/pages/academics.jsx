@@ -93,7 +93,7 @@ function Accademics() {
     </section>
 
     <section className={styles.expo}>
-      <h2>Lorem ipsum dolor sit</h2>
+      <h2>Special Education & Support Services</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, neque. Enim possimus recusandae et ipsa dignissimos. Sit autem temporibus sint aspernatur illum ducimus assumenda consequuntur ipsa, fugit rerum, repudiandae placeat.</p>
       <div className={styles.pics}>
         <img src="/bg_5.jpg" alt="..."/>
@@ -101,6 +101,9 @@ function Accademics() {
       
 
 </div>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, neque. Enim possimus recusandae et ipsa dignissimos. Sit autem temporibus sint aspernatur illum ducimus assumenda consequuntur ipsa, fugit rerum, repudiandae placeat.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, neque. Enim possimus recusandae et ipsa dignissimos. Sit autem temporibus sint aspernatur illum ducimus assumenda consequuntur ipsa, fugit rerum, repudiandae placeat.</p>
+
     </section>
    <Footer/>
    </>
