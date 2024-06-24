@@ -3,10 +3,10 @@ import styles from '@/styles/Accademics.module.css'
 import Footer from '../components/Footer'
 import config from "jsconfig.json"
 import Image from 'next/image'
+import {GiBrain} from "react-icons/gi"
 
 
-
-function Accademics() {
+function Academics() {
   return (
     <>
     <Head>
@@ -80,7 +80,9 @@ function Accademics() {
           </div>
 
           <div className={styles.reason}>
-            <span className={styles.badge}></span>
+            
+              <GiBrain className={styles.badge}/>
+        
             <div>
             <h3>Mental Strength</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis accusamus ducimus, voluptate iure fuga voluptatum.</p>
@@ -110,4 +112,4 @@ function Accademics() {
   )
 }
 
-export default Accademics
+export default Academics

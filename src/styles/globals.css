@@ -11,7 +11,7 @@
     --swiper-theme-color: var(--primary) !important;
     --swiper-navigation-size: 32px !important;
     --text-para: #1e5d5f;
-    --dark: rgb(17, 16, 16);
+    --dark: #444343;
     --m-top-x: 48px;
 }
 
@@ -44,6 +44,7 @@ h2 {
     line-height: 3rem;
     font-weight: 800;
     text-transform: uppercase;
+    color: var(--dark)
 }
 
 h2>span {
@@ -98,5 +99,8 @@ img {
 @media screen and (max-width:428px) {
     h2 {
         font-size: 2rem;
+    }
+    button {
+        width: 100% !important;
     }
 }

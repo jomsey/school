@@ -5,6 +5,8 @@
     height: 270px;
     padding: 40px 0;
     color: var(--grey);
+    border-top: .02rem solid var(--grey);
+    background-color: #fffdfd;
 }
 
 .bottomNav div {
@@ -85,6 +87,15 @@
     .bottomNav {
         padding: 32px;
     }
+    .bottomNav {
+        grid-template-columns: repeat(1fr, 3);
+        height: auto;
+        padding: 32px;
+    }
+    .bottomNav .badge {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 }
 
 @media screen and (max-width:428px) {
@@ -109,5 +120,6 @@
     }
     .linksContainer {
         justify-content: space-between;
+        flex-direction: column;
     }
 }

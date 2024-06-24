@@ -34,18 +34,19 @@ function Footer() {
                     </ul>
 
                 </div>
-          </div>
-          <div className={styles.contacts}>
+                <div className={styles.links}>
             <h4>Contacts</h4>
-            <div className={styles.socialPack}>
+            {/* <div className={styles.socialPack}>
             <FaFacebook/>
             <FaTwitter/>
-              </div>
-                <br/>
+              </div> */}
+                
                 <span>+254-000-000-000</span>
                 <br/>
                 <span>+254-111-000-000</span>
           </div>
+          </div>
+          
       </section>
       <footer className={styles.siteFooter}>
          &copy; {`${config.siteName} ${new Date().getFullYear()}`}

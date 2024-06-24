@@ -1,233 +1,221 @@
-/******************LANDING*************************/
-
-.landing {
-    height: 90vh;
-    width: 100%;
-    background-color: var(--primary);
-    position: relative;
-    display: flex;
-}
-
-.landingImage img {
-    min-height: 350px;
-}
-
-.landing::after {
-    content: "";
-    width: 100%;
-    height: 400px;
-    -webkit-clip-path: polygon(100% 100%, 0 100%, 0 89%, 15% 68%);
-    clip-path: polygon(100% 100%, 0 100%, 0 89%, 15% 68%);
-    background-color: var(--light);
-    position: absolute;
-    bottom: 0;
-}
-
-.landing button {
-    background-color: var(--primary);
-    color: var(--light);
-    width: 250px;
-    padding: 12px 0;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all .3s ease;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 32px;
-}
-
-.landing button:hover {
-    opacity: .8;
-}
-
-.intro {
-    width: 700px;
-    align-self: center;
-    margin: 0 60px 48px 60px;
-}
-
-.intro h1 {
-    font-size: 3rem;
-    font-weight: 800 !important;
-    color: var(--light);
-}
-
-.intro h1 span {
-    /* color: var(--secondary); */
-}
-
-.intro p {
-    margin: 32px 0;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--gray);
-}
-
-
-/***********************SCHOOL SERVICES*******************/
-
-.schoolServices {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    margin: 60px;
-    padding-top: 24px 0;
-}
-
-.schoolServices p,
-.schoolServices h2 {
-    text-align: center;
-}
-
-.schoolServices p {
-    width: 75%;
-    margin: auto;
-    margin-top: var(--m-top-x);
-}
-
-.services {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 32px;
-}
-
-
-/************************SCHOOL MISSION*************************/
-
-.mission {
-    background-size: cover;
-    background-image: url(/education_poll_caro_original_53750.jpg);
-    height: 500px;
-    min-height: 400px !important;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center !important;
-}
-
-.mission::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    backdrop-filter: blur(5px);
-    z-index: 1;
-}
-
-.mission p,
-.mission h2 {
-    color: var(--light);
-    z-index: 2;
-    text-align: center;
-}
-
-.mission p {
-    width: 65%;
-    margin-top: 32px;
-    color: rgb(240, 238, 238);
-}
-
-
-/************************SCHOOL VISION*************************/
-
-.vision {
-    height: 350px;
-    background-color: var(--grey);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.vision p {
-    width: 80%;
-    align-self: center;
-    margin-top: 32px;
-    font-weight: 300 !important;
-}
-
-
-/************************ABOUT*************************/
-
-.aboutUsContainer {
-    margin: 60px 0;
-}
-
-.aboutUsContainer h2 {
-    margin-bottom: 32px;
-}
-
-.aboutUsContainer .aboutUsText p:nth-child(2) {
-    margin-bottom: 32px;
-}
-
-.aboutUsContainer button {
-    background-color: var(--primary);
-    width: 200px;
-    padding: 12px 0;
-    color: var(--light);
-    border: none;
-    border-radius: 10px;
-    margin-top: 24px;
-}
-
-.aboutUs {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    margin-top: var(--m-top-x);
-    gap: 32px;
-    justify-content: space-between;
-}
-
-.aboutUsImage {
-    width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.aboutUsText {
-    width: 500px;
-}
-
-
-/************************REVIEWs*************************/
-
-.reviews {
-    margin: 60px auto;
-    width: 80%;
-}
-
-.reviews p,
-.reviews h2 {
-    text-align: center;
-    margin: auto;
-}
-
-.reviews p {
-    width: 80%;
-    align-self: center;
-    margin-top: 32px;
-}
-
-.reviews .reviewsSlider {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    position: relative;
-}
-
-
-/* .reviewsSlider::before {
+    /******************LANDING*************************/
+    
+    .landing {
+        height: 90vh;
+        width: 100%;
+        background-color: var(--grey);
+        position: relative;
+        display: flex;
+    }
+    
+    .landingImage img {
+        min-height: 350px;
+    }
+    
+    .landing::after {
+        content: "";
+        width: 100%;
+        height: 400px;
+        -webkit-clip-path: polygon(100% 100%, 0 100%, 0 89%, 15% 68%);
+        clip-path: polygon(100% 100%, 0 100%, 0 89%, 15% 68%);
+        background-color: var(--light);
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .landing button {
+        background-color: var(--primary);
+        color: var(--gray);
+        width: 250px;
+        padding: 12px 0;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 32px;
+    }
+    
+    .landing button:hover {
+        opacity: .8;
+    }
+    
+    .intro {
+        width: 700px;
+        align-self: center;
+        margin: 0 60px 48px 60px;
+    }
+    
+    .intro h1 {
+        font-size: 3rem;
+        font-weight: 800 !important;
+        color: var(--dark);
+    }
+    
+    .intro h1 span {
+        color: var(--primary);
+    }
+    
+    .intro p {
+        margin: 32px 0;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--gray);
+    }
+    /***********************SCHOOL SERVICES*******************/
+    
+    .schoolServices {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: 60px;
+        padding-top: 24px 0;
+    }
+    
+    .schoolServices p,
+    .schoolServices h2 {
+        text-align: center;
+    }
+    
+    .schoolServices p {
+        width: 75%;
+        margin: auto;
+        margin-top: var(--m-top-x);
+    }
+    
+    .services {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 32px;
+    }
+    /************************SCHOOL MISSION*************************/
+    
+    .mission {
+        background-size: cover;
+        background-image: url(/education_poll_caro_original_53750.jpg);
+        height: 500px;
+        min-height: 400px !important;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+    }
+    
+    .mission::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+    
+    .mission p,
+    .mission h2 {
+        color: var(--light);
+        z-index: 2;
+        text-align: center;
+    }
+    
+    .mission p {
+        width: 65%;
+        margin-top: 32px;
+        color: rgb(240, 238, 238);
+    }
+    /************************SCHOOL VISION*************************/
+    
+    .vision {
+        height: 350px;
+        background-color: var(--grey);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .vision p {
+        width: 80%;
+        align-self: center;
+        margin-top: 32px;
+        font-weight: 300 !important;
+    }
+    /************************ABOUT*************************/
+    
+    .aboutUsContainer {
+        margin: 60px 0;
+    }
+    
+    .aboutUsContainer h2 {
+        margin-bottom: 32px;
+    }
+    
+    .aboutUsContainer .aboutUsText p:nth-child(2) {
+        margin-bottom: 32px;
+    }
+    
+    .aboutUsContainer button {
+        background-color: var(--primary);
+        width: 200px;
+        padding: 12px 0;
+        color: var(--light);
+        border: none;
+        border-radius: 10px;
+        margin-top: 24px;
+    }
+    
+    .aboutUs {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: var(--m-top-x);
+        gap: 32px;
+        justify-content: space-between;
+    }
+    
+    .aboutUsImage {
+        width: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .aboutUsText {
+        width: 500px;
+    }
+    /************************REVIEWs*************************/
+    
+    .reviews {
+        margin: 60px auto;
+        width: 80%;
+    }
+    
+    .reviews p,
+    .reviews h2 {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .reviews p {
+        width: 80%;
+        align-self: center;
+        margin-top: 32px;
+    }
+    
+    .reviews .reviewsSlider {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        position: relative;
+    }
+    /* .reviewsSlider::before {
     content: "";
     width: 200px;
     height: 100%;
@@ -248,374 +236,387 @@
     background: #fff;
     z-index: 2;
 } */
-
-.reviewsSlider p {
-    border-radius: 10px;
-    padding: 24px;
-    background-color: #eae8e8;
-    width: 350px;
-    color: #4d4c4c;
-}
-
-
-/*************************CONTACT US*********************/
-
-.contactUs {
-    width: 100%;
-    height: 600px;
-    background-image: url(/a2.jpg);
-    background-color: var(--grey);
-    position: relative;
-    background-size: cover;
-}
-
-.contactUs .messageContainer {
-    height: 100%;
-    width: 600px;
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    padding: 0;
-}
-
-.contactUs .messageContainer::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00000075;
-    backdrop-filter: blur(5px);
-    z-index: -1;
-}
-
-.contactUs .messageContainer * {
-    display: block;
-    width: 70%;
-}
-
-.contactUs .messageContainer h3,
-.contactUs .messageContainer p {
-    color: var(--light);
-}
-
-.contactUs .messageContainer h3 {
-    font-size: 1.6rem;
-    margin-bottom: 24px;
-}
-
-.contactUs .messageContainer input,
-.contactUs .messageContainer textarea {
-    background-color: transparent;
-    box-shadow: 0 0 0 1px #fff;
-    border: none;
-    margin-top: 24px;
-    outline: none;
-    color: var(--grey);
-    border-radius: 10px;
-}
-
-.messageContainer input:focus,
-.messageContainer textarea:focus {
-    box-shadow: 0 0 0 1px var(--primary);
-}
-
-.contactUs .messageContainer button {
-    margin-top: 24px;
-    background-color: var(--primary);
-    color: var(--light);
-    border: none;
-    padding: 16px;
-    width: 100%;
-    cursor: pointer;
-    transition: all .3s ease;
-    border-radius: 10px;
-}
-
-.contactUs .messageContainer button:hover {
-    opacity: 0.8;
-}
-
-.contactUs .messageContainer input,
-.contactUs .messageContainer textarea {
-    padding: 12px;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
-.contactUs .messageContainer input::placeholder,
-.contactUs .messageContainer textarea::placeholder {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-
-.contactUs .messageContainer input::-moz-placeholder,
-.contactUs .messageContainer textarea::-moz-placeholder {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/***********Gallery***************/
-
-.gallery h2 {
-    text-align: center;
-    margin-top: var(--m-top-x);
-    margin-bottom: var(--m-top-x);
-}
-
-.socialPack {
-    width: 100px;
-    display: flex;
-    gap: 16px;
-}
-
-.socialPack i {
-    color: var(--primary);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-
-/*******************MEDIA**************/
-
-@media screen and (max-width:834px) {
-    .landing {
-        height: auto;
-        flex-direction: column;
+    
+    .reviewsSlider p {
+        border-radius: 10px;
+        padding: 24px;
+        background-color: #eae8e8;
+        width: 350px;
+        color: #4d4c4c;
     }
-    .landing::after {
-        height: 200px;
-    }
-    .landing button {
-        width: 200px;
-    }
-    .intro {
-        width: auto;
-        margin: 0;
-        padding: 60px;
-    }
-    .intro p {
+    /*************************CONTACT US*********************/
+    
+    .contactUs {
         width: 100%;
+        height: 600px;
+        background-image: url(/a3.jpg);
+        background-color: var(--grey);
+        position: relative;
+        background-size: cover;
+        background-position: center;
     }
-    .schoolServices {
-        margin: 30px 60px 60px 60px;
+    
+    .contactUs .messageContainer {
+        height: 100%;
+        width: 600px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        padding: 0;
     }
-    .schoolServices p {
+    
+    .contactUs .messageContainer::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000075;
+        backdrop-filter: blur(5px);
+        z-index: -1;
+    }
+    
+    .contactUs .messageContainer * {
+        display: block;
         width: 70%;
     }
-    .services {
+    
+    .contactUs .messageContainer h3,
+    .contactUs .messageContainer p {
+        color: var(--light);
+    }
+    
+    .contactUs .messageContainer h3 {
+        font-size: 1.6rem;
+        margin-bottom: 24px;
+    }
+    
+    .contactUs .messageContainer input,
+    .contactUs .messageContainer textarea {
+        background-color: transparent;
+        box-shadow: 0 0 0 1px #fff;
+        border: none;
+        margin-top: 24px;
+        outline: none;
+        color: var(--grey);
+        border-radius: 10px;
+    }
+    
+    .messageContainer input:focus,
+    .messageContainer textarea:focus {
+        box-shadow: 0 0 0 1px var(--primary);
+    }
+    
+    .contactUs .messageContainer button {
+        margin-top: 24px;
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        padding: 16px;
+        width: 100%;
+        cursor: pointer;
+        transition: all .3s ease;
+        border-radius: 10px;
+    }
+    
+    .contactUs .messageContainer button:hover {
+        opacity: 0.8;
+    }
+    
+    .contactUs .messageContainer input,
+    .contactUs .messageContainer textarea {
+        padding: 12px;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .contactUs .messageContainer input::placeholder,
+    .contactUs .messageContainer textarea::placeholder {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .contactUs .messageContainer input::-moz-placeholder,
+    .contactUs .messageContainer textarea::-moz-placeholder {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+    }
+    /***********Gallery***************/
+    
+    .gallery h2 {
+        text-align: center;
+        margin-top: var(--m-top-x);
+        margin-bottom: var(--m-top-x);
+    }
+    
+    .socialPack {
+        width: 100px;
+        display: flex;
+        gap: 16px;
+    }
+    
+    .socialPack i {
+        color: var(--primary);
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    /*******************MEDIA**************/
+    
+    @media screen and (max-width:1000px) {
+        .images img:first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .landing {
+            height: auto;
+            flex-direction: column;
+        }
+        .landing::after {
+            height: 200px;
+        }
+        .landing button {
+            width: 200px;
+        }
+        .intro {
+            width: auto;
+            margin: 0;
+            padding: 60px;
+        }
+        .intro p {
+            width: 100%;
+        }
+        .schoolServices {
+            margin: 30px 60px 60px 60px;
+        }
+        .schoolServices p {
+            width: 70%;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .contactUs .messageContainer {
+            width: 60%;
+        }
+        .aboutUs {
+            width: 80%;
+            flex-direction: column;
+            margin: auto;
+        }
+        .aboutUsImage {
+            width: 100%;
+        }
+        .aboutUsText {
+            width: 100%;
+        }
+        .vision {
+            padding: 60px 0;
+            height: max-content;
+        }
+        .vision p {
+            width: 70%;
+            margin-top: 32px;
+            font-weight: 600;
+        }
+        .reviews p {
+            width: 85%;
+            align-self: center;
+            margin-top: 32px;
+        }
+        .mission {
+            padding: 60px 32px;
+            background-size: cover;
+            height: auto;
+            min-height: 400px;
+        }
+        .mission p {
+            width: 85%;
+        }
+        .bottomNav {
+            padding: 32px;
+        }
+        .contactUs {
+            height: 600px;
+        }
+        .contactUs .messageContainer {
+            width: 100%;
+        }
+        .base div {
+            flex-direction: column;
+        }
+        .beta {
+            flex-direction: column;
+        }
+        .beta .images,
+        .beta div:first-child {
+            width: 100% !important;
+        }
+        .messageContainer {
+            width: 80%;
+            margin: auto;
+        }
+        .contactUs .messageContainer * {
+            width: 100%;
+        }
+    }
+    
+    .base {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 60px;
+        margin-top: 24px;
+    }
+    
+    .base div {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+    
+    .base div h2,
+    .beta div h2 {
+        line-height: 3rem;
+        font-weight: 800;
+        color: var(--dark);
+    }
+    
+    .base p {
+        font-weight: 700;
+        align-self: center;
+        width: 65%;
+        border-left: 3px solid var(--primary);
+        padding-left: 10px;
+    }
+    
+    .beta {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 60px;
+        gap: 32px;
+    }
+    
+    .beta .images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    .contactUs .messageContainer {
+        gap: 10px;
         width: 60%;
     }
-    .aboutUs {
-        width: 100%;
-        flex-direction: column;
-    }
-    .aboutUsImage {
-        width: 100%;
-    }
-    .aboutUsText {
-        width: 100%;
-    }
-    .vision {
-        padding: 60px 0;
-        height: max-content;
-    }
-    .vision p {
-        width: 70%;
-        margin-top: 32px;
-        font-weight: 600;
-    }
-    .reviews p {
-        width: 85%;
-        align-self: center;
+    
+    .beta button {
+        background-color: var(--primary);
+        width: 200px;
+        padding: 12px 0;
+        color: var(--light);
+        border: none;
+        border-radius: 10px;
         margin-top: 32px;
     }
-    .mission {
-        padding: 60px 32px;
-        background-size: cover;
-        height: auto;
-        min-height: 400px;
+    
+    .beta p {
+        margin-top: 32px;
     }
-    .mission p {
-        width: 85%;
+    
+    .beta div:first-child {
+        width: 45%;
     }
-    .bottomNav {
-        padding: 32px;
+    
+    @media screen and (max-width:620px) {
+        .schoolServices {
+            margin: 60px 0 0 0;
+        }
+        .schoolServices p {
+            width: 70%;
+        }
+        .services {
+            grid-template-columns: 1fr;
+        }
+        .contactUs .messageContainer {
+            width: 100%;
+            padding: 60px;
+        }
     }
-    .contactUs {
-        height: 600px;
+    
+    @media screen and (max-width:428px) {
+        .base div,
+        .beta {
+            flex-direction: column;
+        }
+        .base p,
+        .beta div:first-child,
+        .beta .images {
+            width: 100%;
+        }
+        .intro h1 {
+            font-size: 2.5rem;
+        }
+        .intro {
+            width: auto;
+            padding: 32px;
+        }
+        .aboutUsContainer {
+            margin: 30 0px;
+        }
+        .contactUs .messageContainer {
+            padding: 32px !important;
+        }
+        .contactUs .messageContainer * {
+            width: 100%;
+        }
+        .contactUs {
+            height: 650px;
+            ;
+        }
+        .aboutUsImage {
+            width: 100%;
+            height: 250px;
+        }
+        .vision {
+            height: auto;
+            padding: 32px 0;
+        }
+        .vision p {
+            width: 85%;
+        }
+        .reviews {
+            margin: 32px;
+        }
+        .reviews p {
+            width: 100%;
+        }
+        .mission {
+            height: 70vh;
+            padding: 32px 16px;
+        }
+        .mission p {
+            width: 100%;
+        }
+        .bottomNav {
+            grid-template-columns: 1fr;
+            height: auto;
+            padding: 32px;
+        }
+        .bottomNav .badge {
+            width: 150px;
+            height: auto;
+            margin: auto;
+        }
+        .bottomNav h4 {
+            margin-bottom: 16px;
+            font-size: .8rem;
+        }
+        .bottomNav span,
+        .links ul li a {
+            font-family: "Roboto", sans-serif;
+            font-size: .75rem;
+        }
+        .linksContainer {
+            justify-content: space-between;
+        }
     }
-    .contactUs .messageContainer {
-        width: 100%;
-    }
-}
-
-.base {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 60px;
-    margin-top: 24px;
-}
-
-.base div {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    margin-bottom: 60px;
-}
-
-.base div h2,
-.beta div h2 {
-    line-height: 3rem;
-    font-weight: 800;
-}
-
-.base p {
-    font-weight: 700;
-    align-self: center;
-    width: 65%;
-    border-left: 3px solid var(--primary);
-    padding-left: 10px;
-}
-
-.beta {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 60px;
-    gap: 32px;
-}
-
-.beta .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    width: 60%;
-}
-
-.images img:first-child {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.beta button {
-    background-color: var(--primary);
-    width: 200px;
-    padding: 12px 0;
-    color: var(--light);
-    border: none;
-    border-radius: 10px;
-    margin-top: 32px;
-}
-
-.beta p {
-    margin-top: 32px;
-}
-
-.beta div:first-child {
-    width: 45%;
-}
-
-@media screen and (max-width:620px) {
-    .schoolServices {
-        margin: 60px 0 0 0;
-    }
-    .schoolServices p {
-        width: 70%;
-    }
-    .services {
-        grid-template-columns: 1fr;
-    }
-    .contactUs .messageContainer {
-        width: 100%;
-        padding: 60px;
-    }
-}
-
-@media screen and (max-width:428px) {
-    .base div,
-    .beta {
-        flex-direction: column;
-    }
-    .base p,
-    .beta div:first-child,
-    .beta .images {
-        width: 100%;
-    }
-    .intro h1 {
-        font-size: 2.5rem;
-    }
-    .intro {
-        width: auto;
-        padding: 32px;
-    }
-    .aboutUsContainer {
-        margin: 30px;
-    }
-    .contactUs .messageContainer {
-        padding: 32px !important;
-    }
-    .contactUs .messageContainer * {
-        width: 100%;
-    }
-    .contactUs {
-        height: 650px;
-        ;
-    }
-    .aboutUsImage {
-        width: 100%;
-        height: 250px;
-    }
-    .vision {
-        height: auto;
-        padding: 32px 0;
-    }
-    .vision p {
-        width: 85%;
-    }
-    .reviews {
-        margin: 32px;
-    }
-    .reviews p {
-        width: 100%;
-    }
-    .mission {
-        height: 70vh;
-        padding: 32px 16px;
-    }
-    .mission p {
-        width: 100%;
-    }
-    .bottomNav {
-        grid-template-columns: 1fr;
-        height: auto;
-        padding: 32px;
-    }
-    .bottomNav .badge {
-        width: 150px;
-        height: auto;
-        margin: auto;
-    }
-    .bottomNav h4 {
-        margin-bottom: 16px;
-        font-size: .8rem;
-    }
-    .bottomNav span,
-    .links ul li a {
-        font-family: "Roboto", sans-serif;
-        font-size: .75rem;
-    }
-    .linksContainer {
-        justify-content: space-between;
-    }
-}
